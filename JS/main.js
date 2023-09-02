@@ -51,6 +51,7 @@ $(".close").click(function () {
 
 })
 
+// **************************************************colse nav bar when press to any item******************************
 
 // ***************************************Search Data ********************************************
 document.getElementById("Search").addEventListener("click", showSearchInputs)
@@ -164,6 +165,10 @@ function itemsfunc() {
     let items = document.querySelectorAll(".item");
     items.forEach((e) => {
         e.addEventListener("click", function () {
+            $(".nav").animate({ left: -mainLin }, 900)
+            $(".close").removeClass("fa-xmark");
+            $(".close").addClass("fa-bars");
+            open = 0;
             displayDetailsData(e.id);
         })
     })
@@ -298,6 +303,10 @@ function catfunc() {
     let itemcats = document.querySelectorAll(".itemcat");
     itemcats.forEach((e) => {
         e.addEventListener("click", function () {
+            $(".nav").animate({ left: -mainLin }, 900)
+            $(".close").removeClass("fa-xmark");
+            $(".close").addClass("fa-bars");
+            open = 0;
             getcat(e.id);
         })
     })
@@ -366,6 +375,10 @@ function getItemArea() {
     let list = document.querySelectorAll(".itemArea");
     list.forEach((e) => {
         e.addEventListener("click", function () {
+            $(".nav").animate({ left: -mainLin }, 900)
+            $(".close").removeClass("fa-xmark");
+            $(".close").addClass("fa-bars");
+            open = 0;
             getcounteryData(e.id)
         })
     })
@@ -428,6 +441,10 @@ function getIngdetails() {
     let list = document.querySelectorAll(".itemIng");
     list.forEach((e) => {
         e.addEventListener("click", function () {
+            $(".nav").animate({ left: -mainLin }, 900)
+            $(".close").removeClass("fa-xmark");
+            $(".close").addClass("fa-bars");
+            open = 0;
             getIngData(e.id)
         })
     })

@@ -93,6 +93,13 @@ input{
     position: relative;
     z-index: 555555555555555555;
 } */
+.divide{
+    height: 30vh;
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    background-color: #000;
+}
 .con{display: flex;
 justify-self: end;}
 /* .hh{

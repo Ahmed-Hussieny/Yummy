@@ -14,23 +14,23 @@ Lin.forEach((e) => {
         $(".close").removeClass("fa-xmark");
         $(".close").addClass("fa-bars");
         open = 0;
-        for (let i = 4; i >= 0; i--) {
-            $(Lin[i]).animate({
-                top: 100
-            }, (i + 5) * 10)
-            $(Lin[i]).fadeOut()
-        }
+        $(".links li").animate({
+            top: 300
+        }, 500)
 
     })
 })
+
 $(".close").click(function () {
     if (open === 0) {
         $(".nav").animate({ left: 0 }, 400)
-        Lin.forEach((e, i) => {
-            $(e).fadeIn().animate({
+
+        for (let i = 0; i < 5; i++) {
+            $(".links li").eq(i).animate({
                 top: 0
-            }, (i + 5) * 100)
-        })
+            }, (i + 5) * 150)
+        }
+
         $(".close").removeClass("fa-bars");
         $(".close").addClass("fa-xmark");
         $(".nav").css("z-index", "5555555555555");
@@ -44,11 +44,9 @@ $(".close").click(function () {
 
         open = 0;
 
-        for (let i = 4; i >= 0; i--) {
-            $(Lin[i]).animate({
-                top: 100
-            }, (i + 50) * 10).fadeOut()
-        }
+        $(".links li").animate({
+            top: 300
+        }, 500)
     }
 
 })

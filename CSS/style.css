@@ -146,8 +146,11 @@ justify-self: end;}
 
 
   @media screen and (max-width: 900px) {
-    .item , .itemArea ,.itemIng , .itemcat , #content ,#load {
+    .item , .itemArea ,.itemIng , .itemcat  ,#load {
         padding-left: 60px;
+      }
+      .searchInputs{
+        padding-left: 70px;
       }
       #last {
         padding-left: 50px;

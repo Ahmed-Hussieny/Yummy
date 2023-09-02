@@ -145,7 +145,7 @@ justify-self: end;}
 
 
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     .item , .itemArea ,.itemIng , .itemcat , #content ,#load {
         padding-left: 60px;
       }

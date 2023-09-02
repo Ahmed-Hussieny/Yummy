@@ -15,7 +15,7 @@ Lin.forEach((e) => {
         $(".close").addClass("fa-bars");
         open = 0;
         $(".links li").animate({
-            top: 300
+            top: 200
         }, 500)
 
     })
@@ -45,7 +45,7 @@ $(".close").click(function () {
         open = 0;
 
         $(".links li").animate({
-            top: 300
+            top: 200
         }, 500)
     }
 

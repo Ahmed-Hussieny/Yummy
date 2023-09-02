@@ -146,10 +146,10 @@ justify-self: end;}
 
 
   @media screen and (max-width: 900px) {
-    .item , .itemArea ,.itemIng , .itemcat  ,#load {
+    .item , .itemArea ,.itemIng ,.itemcat  ,#load {
         padding-left: 60px;
       }
-      .searchInputs{
+      .searchInputs ,#jjjjj{
         padding-left: 70px;
       }
       #last {

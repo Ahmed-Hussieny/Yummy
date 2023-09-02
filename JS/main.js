@@ -85,30 +85,38 @@ function showSearchInputs() {
     $("#load").addClass('d-none');
 }
 async function SearchByName() {
-    $("#load").removeClass('d-none');
-    $("#firstnamealert").addClass("d-none")
-    disData.innerHTML = "";
+
     let Name = document.getElementById("name").value;
 
-
-    let byname = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${Name}`)
-    let Data = await byname.json();
-
-    searchDisplay(Data.meals);
-    $("#load").addClass('d-none');
+   
+        $("#load").removeClass('d-none');
+        $("#firstnamealert").addClass("d-none")
+        disData.innerHTML = "";
+        
+    
+        let byname = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${Name}`)
+        let Data = await byname.json();
+    
+        searchDisplay(Data.meals);
+        $("#load").addClass('d-none');
+    
+    
 
 
 
 }
 async function SearchByFirstLetter() {
+    let FirstLetter = document.getElementById("firstLetter").value;
+    if(FirstLetter.length===1){
     $("#load").removeClass('d-none');
     disData.innerHTML = "";
     document.getElementById("mainData2").innerHTML = "";
-    let FirstLetter = document.getElementById("firstLetter").value;
+   
     let byname = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${FirstLetter}`)
     let Data2 = await byname.json();
     searchDisplay(Data2.meals);
     $("#load").addClass('d-none');
+    }
 
 }
 

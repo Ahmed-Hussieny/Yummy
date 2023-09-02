@@ -1,0 +1,150 @@
+body{
+   background: #000;
+}
+.sidebar{
+    width: 65px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0;
+    z-index: 55555555555;
+}
+.Links{
+   position: relative;
+   left: 0px;
+    /* overflow: hidden; */
+
+}
+.ww{
+    width: 250px;
+    padding-left: 0px;
+}
+.links li{
+    top: 100px;
+}
+.pointer{cursor: pointer !important;}
+
+.cover , .coverr{
+    position: absolute;
+    background-color: #ffffffcd;
+    top:100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: top 0.5s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.item , i ,.itemArea , .itemcat , .itemIng{
+    cursor: pointer;
+}
+.item , .item img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.item:hover .cover {
+    top: 0;
+    z-index: 0;
+}
+.itemcat , .itemcat img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.itemcat:hover .coverr {
+    top: 0;
+    z-index: 0;
+}
+.Links{
+    z-index: 55555;
+}
+.nav{
+    z-index: 0;
+}
+input{
+    background-color: #000 !important;
+    color: white !important;
+}
+
+::placeholder{
+    color: rgb(140, 135, 135) !important;
+}
+.recipeItem{
+    padding: 5px 10px;
+   color: #2863ed;
+    background-color: #adf2f1;
+    display: inline-block;
+    border-radius: 5px;
+}
+.TagsItem{
+    padding: 5px 10px;
+    color: #e63131;
+     background-color: #eeb6b6;
+     display: inline-block;
+     border-radius: 5px;
+}
+.searchInputs{
+    z-index: 0;
+}
+/* .gg{
+    position: relative;
+    z-index: 555555555555555555;
+} */
+.con{display: flex;
+justify-self: end;}
+/* .hh{
+    height: 90vh;
+} */
+.ttt{
+    margin-top: 80px;
+}
+#load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 88888;
+    background: #000;
+}
+.loader {
+    width: 150px;
+    height: 150px;
+    background-color: #eac90f;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 30px 4px rgba(0, 0, 0, 0.5) inset,
+      0 5px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 45%;
+    top: -40%;
+    background-color: #fff;
+    animation: wave 5s linear infinite;
+  }
+  .loader:before {
+    border-radius: 30%;
+    background: rgba(255, 255, 255, 0.4);
+    animation: wave 5s linear infinite;
+  }
+  @keyframes wave {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
